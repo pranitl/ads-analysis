@@ -1,48 +1,46 @@
-// Initialize an empty array to hold the output items.
-const outputItems = [];
+// Initialize an empty array to hold the flattened output items.
+const flattenedItems = [];
 
-// Get all the items from the previous node.
+// Get all items from the previous node (output of initial.js).
+// Each 'item' represents one ad concept.
 const items = $input.all();
 
-// Loop through each incoming item to process it.
+// Loop through each ad concept item to process its slides.
 for (const item of items) {
   try {
-    const rawOutput = item.json.output;
+    // item.json is a single ad concept object.
+    const concept = item.json;
 
-    // 1. Clean the string to remove markdown fences.
-    // This is a more robust way to clean than the original regex.
-    let cleanString = rawOutput.trim();
-    if (cleanString.startsWith('```json')) {
-      cleanString = cleanString.substring(7); // Removes '```json'
+    const { title, key_emotion, design_notes, strategic_rationale, final_slides } = concept;
+
+    // Check if final_slides exists and is an array.
+    if (final_slides && Array.isArray(final_slides)) {
+      // Create a separate output item for each slide.
+      for (const slide of final_slides) {
+        flattenedItems.push({
+          json: {
+            // Add parent concept info to each slide.
+            concept_title: title,
+            concept_key_emotion: key_emotion,
+            concept_design_notes: design_notes,
+            concept_strategic_rationale: strategic_rationale,
+            // Spread the slide data.
+            ...slide
+          }
+        });
+      }
     }
-    if (cleanString.endsWith('```')) {
-      cleanString = cleanString.slice(0, -3); // Removes trailing '```'
-    }
-    // Trim again to remove any leftover newlines or spaces.
-    cleanString = cleanString.trim();
-
-    // 2. Parse the cleaned string into a proper JavaScript object.
-    // Note: The content is an object, not an array.
-    const parsedJson = JSON.parse(cleanString);
-
-    // 3. Push the parsed object into the output.
-    // This structure is simpler and easier for other n8n nodes to use.
-    outputItems.push({
-      json: parsedJson
-    });
-
   } catch (error) {
-    // If any item fails to parse, return an error for that item
-    // without stopping the whole workflow. This helps with debugging.
-    outputItems.push({
+    // If any item causes an error, log it without stopping the workflow.
+    flattenedItems.push({
       json: {
-        error: "Failed to parse JSON from input item.",
+        error: "Failed to process and flatten an ad concept.",
         errorMessage: error.message,
-        originalData: item.json.output
+        originalData: item.json
       }
     });
   }
 }
 
-// Return the array of processed items.
-return outputItems;
+// Return the final array of flattened slide items.
+return flattenedItems;

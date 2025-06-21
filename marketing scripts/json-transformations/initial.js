@@ -9,23 +9,22 @@ for (const item of items) {
   try {
     const rawOutput = item.json.output;
 
-    // 1. Clean the string to remove markdown fences.
-    // This is a more robust way to clean than the original regex.
+    // 1. Clean the string to remove markdown fences and surrounding whitespace.
     let cleanString = rawOutput.trim();
     if (cleanString.startsWith('```json')) {
-      cleanString = cleanString.substring(7); // Removes '```json'
+      cleanString = cleanString.substring(7);
     }
     if (cleanString.endsWith('```')) {
-      cleanString = cleanString.slice(0, -3); // Removes trailing '```'
+      cleanString = cleanString.slice(0, -3);
     }
     // Trim again to remove any leftover newlines or spaces.
     cleanString = cleanString.trim();
 
     // 2. Parse the cleaned string into a proper JavaScript object.
-    // Note: The content is an object, not an array.
+    // The content is an array of ad concepts.
     const parsedJson = JSON.parse(cleanString);
 
-    // 3. Push the parsed object into the output.
+    // 3. Push the parsed array into the output for the next step.
     // This structure is simpler and easier for other n8n nodes to use.
     outputItems.push({
       json: parsedJson

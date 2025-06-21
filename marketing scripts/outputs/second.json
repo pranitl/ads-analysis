@@ -1,0 +1,248 @@
+[
+    {
+      "error": "Failed to process and flatten ad concepts.",
+      "errorMessage": "adConcepts is not iterable",
+      "originalData": {
+        "title": "The Silent Alarms",
+        "key_emotion": "Worry & Guilt",
+        "final_slides": [
+          {
+            "slide_number": 1,
+            "type": "hook",
+            "text": "The mail piling up. The shaky handwriting on the grocery list. The same story told for the third time this week.",
+            "visual_idea": "A tight, top-down shot of a kitchen table. We see a cup of coffee, an open newspaper, and a grocery list with visibly shaky, unsteady handwriting. The focus is on the list. Text overlay: 'You see the signs. You feel the knot in your stomach.'"
+          },
+          {
+            "slide_number": 2,
+            "type": "agitate",
+            "text": "You know you need to talk. But every time you try, you hit the same wall: 'I'm perfectly fine!'",
+            "visual_idea": "A visual metaphor. An adult child stands on one side of a pane of glass, looking concerned but composed. On the other side, an older parent's reflection is seen, but their face is obscured by the words 'I'm fine' written on the glass, almost like frost. This implies a barrier without depicting the parent as weak."
+          },
+          {
+            "slide_number": 3,
+            "type": "agitate",
+            "text": "You feel caught in an invisible tug-of-war. Between your life, your job, and the growing fear that they need more than you can give.",
+            "visual_idea": "A more abstract visual. A split screen. Left: A calendar filled with work meetings and kids' soccer practices. Right: A single, circled doctor's appointment for 'Dad'. A hand (the adult child's) is shown hovering over the calendar, looking tired but thoughtful, not defeated."
+          },
+          {
+            "slide_number": 4,
+            "type": "pivot",
+            "text": "This isn't about 'giving up' or taking control. It’s about building a bridge of support. The phrase you've been searching for is: 'Support, not control.'",
+            "visual_idea": "A close-up shot of two hands. One is clearly older, the other younger. The younger hand is gently placing a warm mug of tea into the older hand. It’s a gesture of giving, not taking. The lighting is warm and soft."
+          },
+          {
+            "slide_number": 5,
+            "type": "solve",
+            "text": "So they can thrive safely in the home they love. And you can go back to just being their son or daughter again, not their worried manager.",
+            "visual_idea": "The 'after' shot. An older person is happily tending to their houseplants by a sunny window. In the shallow background, slightly out of focus, a kind, uniformed caregiver is smiling gently as they tidy up the kitchen. The focus is 100% on the parent's contentment and independence."
+          },
+          {
+            "slide_number": 6,
+            "type": "trust",
+            "text": "Peace of mind needs to be built on trust. We're your neighbors.",
+            "visual_idea": "A clean, reassuring graphic slide. Use icons. A small map icon with text: 'Local & Proudly serving the Boston Area for 15+ years.' A shield icon with text: 'Every caregiver is background-checked, insured & bonded.' A medical cross icon with text: 'All care plans managed by a Registered Nurse.'"
+          },
+          {
+            "slide_number": 7,
+            "type": "cta",
+            "text": "Ready to trade worry for a plan? Get our free conversation guide.",
+            "visual_idea": "A simple, clean visual of a PDF document icon or a beautifully designed booklet cover. The cover title is clear: 'The First Conversation: 5 Gentle Questions to Start Talking About Care.' Below that, a clear 'Link in Bio' button or arrow."
+          }
+        ],
+        "design_notes": "OVERALL MOOD: The aesthetic should be reassuring, empathetic, and professional. It must feel like advice from a wise, trusted friend, not a cold corporation. Think 'New England pragmatic' meets 'deeply compassionate.'\n\nCOLOR PALETTE: Muted, warm, and natural. Think of a cozy Boston brownstone: soft brick reds, warm creams, gentle sage greens, and deep, calming blues. Avoid harsh primary colors or generic corporate blue.\n\nTYPOGRAPHY: Use a classic, legible serif font (like Garamond or Lora) for headings to convey wisdom and authority. Use a clean, modern sans-serif font (like Lato or Open Sans) for the body text for maximum clarity and readability on mobile.\n\nIMAGERY & ICONOGRAPHY: All photography must feel authentic and non-stocky. Like high-quality family snapshots. Focus on details—hands, environments, objects (like the list, the mug)—to tell the story subtly. Avoid showing faces contorted in pain or despair. Depict both the adult child and parent with dignity. Icons on the trust slide should be clean, simple, and hand-drawn or have a slightly organic feel to match the overall tone.",
+        "strategic_rationale": "This final version synthesizes the most powerful elements from the original concepts with the direct, actionable feedback from the focus group. It leads with the 'Silent Alarms' hook (Concept 1), which was most emotionally resonant, and integrates the 'I'm Fine' barrier (Concept 2) as a key point of agitation. Crucially, it adopts the emotional resolution and superior visual concepts from the 'Guilt Trap' (Concept 3), such as the 'invisible tug-of-war' and the 'subtle caregiver' visual. The narrative arc was extended to include a new 'Trust' slide (Slide 6), which directly addresses the focus group's most critical feedback regarding credibility, locality, and safety ('Who ARE you?', 'Give me the proof'). The generic CTA was replaced with a tangible, high-value offer (a conversation guide), reframing the ad from a vague emotional appeal to a practical, trustworthy first step towards a solution, precisely as the user requested."
+      }
+    },
+    {
+      "error": "Failed to process and flatten ad concepts.",
+      "errorMessage": "adConcepts is not iterable",
+      "originalData": {
+        "title": "The 'I'm Fine' Breakthrough",
+        "key_emotion": "Frustration & Relief",
+        "final_slides": [
+          {
+            "slide_number": 1,
+            "type": "hook",
+            "text": "'I'm fine.' The two words that build a brick wall between your 2 AM worries and your parent's well-being.",
+            "visual_idea": "A striking, atmospheric visual. A weathered, old brick wall dominates the frame. The words 'I'M FINE' are painted on it in a defiant, hand-written style. In the foreground, slightly out of focus, is a smartphone screen glowing with the time: '2:17 AM'."
+          },
+          {
+            "slide_number": 2,
+            "type": "agitate",
+            "text": "You see the signs. The unopened mail. The slight hesitation on the stairs. But every time you try to talk, the wall goes up. You feel like a nag, and they feel misunderstood.",
+            "visual_idea": "Shot from the adult child's perspective. We see their parent from behind, reaching unsteadily for something on a high kitchen shelf. The parent's posture shows strain, but they are forcing a casual demeanor. The lighting should feel like a real kitchen, not a studio set."
+          },
+          {
+            "slide_number": 3,
+            "type": "reframe",
+            "text": "The real fear isn't about help. It's about losing the life they love in the home they cherish. But what if support wasn't the end of independence, but the key to extending it?",
+            "visual_idea": "A split-screen visual. Left side: an older hand struggling with a heavy laundry basket, shot in cool, slightly stressful tones. Right side: the same older hand happily tending to a vibrant garden, shot in warm, joyful light. A subtle, hand-drawn arrow connects the two, labeled 'More time for what matters.'"
+          },
+          {
+            "slide_number": 4,
+            "type": "solve",
+            "text": "It starts by shifting from accusation to alliance. Instead of 'You need help,' try 'I'm worried, and I want to be your partner in this.' The goal isn't to take over, it's to make their cherished way of life continue, safely.",
+            "visual_idea": "A visual metaphor. Two paths are shown. One, labeled 'The Argument,' is rocky and leads to a wall. The other, labeled 'The Partnership,' is smooth and leads to an open door. The text sits cleanly over the 'Partnership' path."
+          },
+          {
+            "slide_number": 5,
+            "type": "bridge",
+            "text": "A true partnership needs the right people. Our local caregivers are more than just helpers; they're trained to preserve dignity and support the life your parent wants to live—right here in Middlesex County.",
+            "visual_idea": "A warm, professional profile photo of a friendly, competent-looking caregiver. Underneath, a caption reads: 'Meet Sarah, one of our Care Partners from Lexington.' This builds immediate trust and local credibility."
+          },
+          {
+            "slide_number": 6,
+            "type": "cta",
+            "text": "Ready to turn the argument into a conversation? Schedule a free, 15-minute call with a Care Advisor who understands your neighborhood and your needs. No pressure. No obligation. Just a plan.",
+            "visual_idea": "A clean, inviting final slide. A friendly face (the Care Advisor) is in a small circle next to a simple calendar icon. The text is prominent with a clear, clickable button that says 'Book Your Free 15-Min Call'."
+          }
+        ],
+        "design_notes": "OVERALL MOOD: Empathetic, authentic, and reassuringly professional. It should feel like advice from a wise, local friend, not a national corporation. \n\nCOLOR PALETTE: Warm, muted, and grounded. Think earthy tones, soft blues, and warm creams. Avoid harsh, primary colors or sterile corporate blues. The 'joyful' visuals (like the garden) can have pops of vibrant, natural color.\n\nTYPOGRAPHY: Use a classic, readable serif font (like Garamond or Lora) for headings to convey wisdom and trust. Use a clean, highly-legible sans-serif (like Nunito Sans or Open Sans) for body copy. Text should be large enough to be easily read on a mobile device.\n\nIMAGERY & ICONS: Photos must feel authentic and unstaged, like high-quality family snapshots. Avoid polished, generic stock photography at all costs. The subjects should look like real people from the New England area. Any icons (arrows, calendar) should be simple, clean, and possibly have a slightly hand-drawn, organic feel to avoid a cold, corporate aesthetic.",
+        "strategic_rationale": "This final version directly synthesizes the focus group's feedback by merging the strongest narrative elements from all three concepts. It leads with the highly-relatable 'I'm Fine' brick wall (Concept 2), incorporates the '2 AM worries' (Concept 1), and uses the powerful 'enabling independence' reframe (Concept 3). Crucially, it replaces the vague, homework-like CTAs with a specific, tangible, and human-centric action: a no-obligation call with a local care advisor. The addition of the 'Bridge' slide (Slide 5) directly addresses the user's questions about 'Who are you?' and 'Who are your people?', building trust by showcasing a local caregiver and mentioning Middlesex County. The entire narrative now follows a more sophisticated arc: It validates the user's frustration, reframes the core problem from their parent's perspective, offers a concrete communication strategy, and provides a trustworthy, low-commitment next step, turning an abstract problem into a solvable one."
+      }
+    },
+    {
+      "error": "Failed to process and flatten ad concepts.",
+      "errorMessage": "adConcepts is not iterable",
+      "originalData": {
+        "title": "The Silent Worry Carousel",
+        "key_emotion": "Anxiety Turning to Hopeful Clarity",
+        "final_slides": [
+          {
+            "slide_number": 1,
+            "type": "hook",
+            "text": "Mail piling up. Forgotten appointments. That 'almost fell' moment.\n\nYou see the small signs. Your heart sinks. But what do you possibly *say*?",
+            "visual_idea": "A tight, evocative shot. A kitchen counter with a stack of unopened mail, some clearly bills. A pair of reading glasses sits next to them. The lighting is soft, late-afternoon sun, creating a quiet, melancholic mood. The focus is sharp on the mail, the background slightly blurred."
+          },
+          {
+            "slide_number": 2,
+            "type": "agitate",
+            "text": "You feel like you’re walking on eggshells. You dread the conversation, terrified of insulting the person who raised you. \n\nYour worry clashes with their fierce pride. So you stay silent.",
+            "visual_idea": "An over-the-shoulder shot from the adult child's perspective. We see their hand on a phone, mid-text, hesitating. In the background, blurred but recognizable, an older parent is watering a houseplant, oblivious. The visual tension is in the un-sent message and the distance between them."
+          },
+          {
+            "slide_number": 3,
+            "type": "agitate",
+            "text": "You worry about falls and missed meds. \n\nThey worry you’re going to take their keys, their home, their life. \n\nEvery suggestion feels like an attack on their independence.",
+            "visual_idea": "A thoughtful diptych (side-by-side image). Left: A close-up of a car key in an older person's hand, held tightly. Right: A close-up of a calendar on a wall with a doctor's appointment circled, but with a question mark drawn next to it. This shows the two competing, valid fears without being a cheesy metaphor."
+          },
+          {
+            "slide_number": 4,
+            "type": "solve-pivot",
+            "text": "But what if the goal isn't control, but connection? What if help isn't *taking away*, but *adding* to their life?\n\nIt’s time to frame your love, not their limits.",
+            "visual_idea": "A shift in light and mood. The image is of two hands—one older, one younger—working on a simple jigsaw puzzle together on a wooden table. It represents collaborative problem-solving and shared time, not a transaction of care. The scene is warm and brightly lit."
+          },
+          {
+            "slide_number": 5,
+            "type": "solve-specific",
+            "text": "Adding... an extra set of eyes on medications. A safe ride to the grocery store. A hand with the laundry.\n\nAdding the support they need to stay in the home they love, longer. On their terms.",
+            "visual_idea": "Show, don't just tell. A clean, three-part grid visual. Top: A clear, organized pillbox. Bottom left: An older person smiling as they get out of a car, holding a bag of groceries. Bottom right: A neat stack of folded towels. The focus is on the positive outcomes—order, mobility, and dignity."
+          },
+          {
+            "slide_number": 6,
+            "type": "cta",
+            "text": "For 15 years, our Middlesex County care managers have helped local families start this exact conversation. \n\nDownload our free guide to learn how. It’s a practical first step, not a sales call.",
+            "visual_idea": "An image of a simple, elegant notebook and pen on a clean, uncluttered desk. The notebook is open to a blank page, suggesting new beginnings. On the page, handwritten-style text overlays the CTA: 'Get the Guide: The 5 Toughest Conversations'."
+          }
+        ],
+        "design_notes": "OVERALL MOOD: The journey should go from quiet anxiety to hopeful, practical clarity. It must feel authentic, respectful, and grounded in reality. Avoid anything that feels overly polished, corporate, or generic.\n\nCOLOR PALETTE: Start with muted, softer tones (like a cloudy New England day) for the first few slides to reflect the worry. Gradually introduce warmer, brighter, more natural light as we move to the solution. Think warm woods, soft creams, and gentle blues—nothing harsh.\n\nTYPOGRAPHY: Use a classic, readable serif font (like Garamond or Caslon) for headings to convey wisdom and trustworthiness. A clean, simple sans-serif (like Lato or Open Sans) for the body text will ensure clarity and accessibility.\n\nIMAGERY STYLE: Realism is key. Photos should feel like they were taken by a family member, not a commercial photographer. Use natural light, authentic home environments (think a real Cambridge condo or Lexington home, not a generic set), and genuine-looking people. Avoid forced smiles and stock clichés at all costs. The diptych and grid visuals should be clean and design-led, not just photos dropped in a template.",
+        "strategic_rationale": "This final carousel is a direct synthesis of the winning elements from all three concepts, heavily refined by the focus group feedback. It starts with the potent, emotionally resonant hook of 'Silent Worry' (Concept 1), which the user confirmed was a direct hit. It then integrates the crucial re-framing of 'help as adding, not taking away' from Concept 2, a 'lightbulb moment' for the user. We systematically eliminated all the cheesy, metaphorical visuals ('wall', 'tightrope') and vague language ('compassionate roadmap'). Instead, we used tangible, specific examples and visual ideas that feel authentic ('mail on counter', 'keys in hand'). Crucially, the final two slides directly address the user's biggest frustrations: the lack of specificity and trust. Slide 5 makes the 'solution' concrete by listing tangible benefits, and Slide 6 establishes local credibility ('Middlesex County') and offers a high-value, no-strings-attached CTA ('Download our free guide'), as suggested. This transforms the carousel from generic content marketing into a trustworthy, empathetic, and actionable resource for a specific target audience."
+      }
+    },
+    {
+      "error": "Failed to process and flatten ad concepts.",
+      "errorMessage": "adConcepts is not iterable",
+      "originalData": {
+        "title": "The Silent Worry Carousel (Refined)",
+        "key_emotion": "Reassurance & Empowerment",
+        "final_slides": [
+          {
+            "slide_number": 1,
+            "type": "hook",
+            "text": "That quiet dread when you see Mom's mail piling up? Yeah. We get it.",
+            "visual_idea": "A realistic, slightly desaturated photo. A close-up on a stack of unopened mail on a wooden kitchen counter. A single cup of cold tea sits beside it. The lighting is soft morning light, but the scene feels still and heavy, conveying a sense of loving concern."
+          },
+          {
+            "slide_number": 2,
+            "type": "agitate",
+            "text": "Your gut says something's wrong. Your head screams, 'How do I even start this talk without a fight?' The words get stuck, or worse, come out all wrong.",
+            "visual_idea": "Close-up on a smartphone screen held in a person's hands. The messaging app is open to a contact named 'Mom ❤️'. The text box shows a message typed, deleted, and re-typed: 'We need to talk about...' The cursor blinks, conveying hesitation and anxiety."
+          },
+          {
+            "slide_number": 3,
+            "type": "agitate",
+            "text": "Every attempt is met with a wall: 'I'm perfectly fine!' 'I don't want a stranger in my house.' You're caught between respecting their pride and fearing for their safety. It's a lonely place to be.",
+            "visual_idea": "A visual metaphor. A clear photo of a parent's beloved, comfortable living room, but it's partially obscured by overlapping, semi-transparent speech bubbles containing common objections ('I'm fine!', 'It's too expensive', 'Don't worry about me'). This shows how the objections cloud the real issue."
+          },
+          {
+            "slide_number": 4,
+            "type": "solve",
+            "text": "The secret isn't about taking control. It's about protecting their independence. The conversation changes when it's about helping them stay in the home they love, safely.",
+            "visual_idea": "A warm, hopeful image. An older woman is happily tending to her potted tomato plants on a sunny porch. In the soft-focus background, a younger, supportive hand (a caregiver) is subtly holding the watering can steady. The focus is entirely on the parent's joy and capability."
+          },
+          {
+            "slide_number": 5,
+            "type": "solve_bridge",
+            "text": "Gentle words open doors. Start with 'I've been feeling worried because...' instead of 'You need to...'. When the conversation shifts to 'we', you're not alone. We're here for the 'what's next'.",
+            "visual_idea": "Simple, clean graphic. Two speech bubbles are shown, one with a prominent 'I' and the other with a 'You'. A gentle hand-drawn arrow shows them merging into a single, larger speech bubble that says 'We'. This visually represents the shift from accusation to collaboration."
+          },
+          {
+            "slide_number": 6,
+            "type": "cta",
+            "text": "Ready for a calmer conversation? Get our free 5-step guide to talking with your parents about care. No strings attached. Link in bio.",
+            "visual_idea": "A clean, trustworthy graphic showing the cover of a downloadable PDF guide. The title 'The Heart-to-Heart Handbook: 5 Steps to a Calmer Conversation' is clearly visible. Below it, a simple, friendly button graphic says 'Get The Free Guide' with an arrow pointing towards the bio."
+          }
+        ],
+        "design_notes": "OVERALL MOOD: The aesthetic should be warm, authentic, and reassuring, like a trusted friend's advice—not a slick, cold corporation. It's grounded in the reality of suburban life, not a generic, corporate fantasy.\n\nCOLOR PALETTE: Muted, warm earth tones. Think soft olive greens, warm tans, dusty blues, and creams. Avoid harsh primary colors or sterile whites. Use color to guide the emotional journey from concern (cooler tones on slide 1) to hope (warmer tones on slides 4-6).\n\nTYPOGRAPHY: Use a friendly, readable serif font (like Lorna or Cormorant Garamond) for the main text to convey wisdom and warmth. Use a clean, simple sans-serif for subtitles or CTA text to ensure clarity and actionability.\n\nIMAGERY/ICONOGRAPHY: Photos must feel authentic and unstaged, like real family snapshots. Avoid glossy, perfect stock photos at all costs. Look for images with natural light and genuine emotional expressions. Any graphic elements (like the speech bubbles or arrows) should have a slightly hand-drawn, organic feel to them, reinforcing the human touch.",
+        "strategic_rationale": "This final carousel is a direct synthesis of the sharpest insights from Eleanor's focus group feedback. It cherry-picks the most effective elements from all three initial concepts to create a more powerful and cohesive narrative. It leads with the highly specific and resonant 'piled-up mail' hook from Concept 1. It incorporates the real-world objections and the powerful 'protecting independence' reframe from Concept 2. Crucially, it integrates the actionable communication advice ('I' statements) from Concept 3 and adds the 'bridge' slide Eleanor identified as missing, which seamlessly connects the emotional problem (the conversation) to our practical solution (caregiving services). The visuals are refined to be more grounded and less cliché (e.g., replacing the 'tightrope' with the 'deleted text'), and the CTA is now specific and value-driven, answering her question of 'what happens next' and building trust by offering tangible help upfront."
+      }
+    },
+    {
+      "error": "Failed to process and flatten ad concepts.",
+      "errorMessage": "adConcepts is not iterable",
+      "originalData": {
+        "title": "The 'I'm Fine' Carousel: A New Conversation",
+        "key_emotion": "Frustration & Seeking a Breakthrough",
+        "final_slides": [
+          {
+            "slide_number": 1,
+            "type": "hook",
+            "text": "You: “I’m worried.”\nYour Parent: “I’m perfectly fine!”\n\nThat conversation? It’s a brick wall.",
+            "visual_idea": "A clean, modern graphic with two distinct speech bubbles. First bubble: soft, gray text 'I'm worried.' Second bubble: larger, bold, almost defiant text 'I'M FINE!' Below, a subtle, slightly transparent image of a parent's house with a closed door."
+          },
+          {
+            "slide_number": 2,
+            "type": "agitate",
+            "text": "It feels like denial. But it's something deeper.\n\nIt’s the fear of losing their world. Their home. Their identity. It’s pride, protecting everything they’ve built.",
+            "visual_idea": "A close-up, sensitive photo of an older person’s hands resting on a familiar object in their home—a worn armchair, a photo album, a teacup. The focus is on their connection to their personal space."
+          },
+          {
+            "slide_number": 3,
+            "type": "pivot",
+            "text": "So, let's stop talking about 'getting help.'\n\nLet's start talking about protecting what they love most. The conversation isn't about what they're losing, but what they get to *keep*.",
+            "visual_idea": "Split screen visual. Left side: A slightly out-of-focus shot of a calendar with missed appointments circled. Right side (larger and in focus): A vibrant photo of a parent's beloved garden or a well-used bookshelf. An arrow graphic subtly points from the 'problem' to the 'passion'."
+          },
+          {
+            "slide_number": 4,
+            "type": "solve",
+            "text": "\"Mom, I want to make sure you can always tend to your garden. What if someone could help with the groceries, so you have more energy for your roses?\"\n\nFrame support as a tool for independence.",
+            "visual_idea": "A warm, candid photo. A friendly, mature caregiver is laughing with an older adult while helping them re-pot a plant. The interaction feels like a partnership between two friends, not a clinical service. The focus is mutual enjoyment."
+          },
+          {
+            "slide_number": 5,
+            "type": "cta",
+            "text": "This reframing is just the first step. The next is having the right words.\n\nGet our guide with proven conversation starters, tailored for proud parents.",
+            "visual_idea": "A high-quality mockup of a beautifully designed guide. The cover title is clear: 'The Dignity Dialogue: A Guide to the Care Conversation.' A small badge on the cover reads: 'Trusted by New England Families Since 2008.'"
+          },
+          {
+            "slide_number": 6,
+            "type": "value_proposition",
+            "text": "So you can go back to being their daughter or son. Not their anxious manager.\n\nFind your peace of mind. Let's talk.",
+            "visual_idea": "A simple, peaceful image. Two coffee cups are resting on a kitchen table, sunlight streaming in. It evokes a feeling of relief and a return to a normal, loving parent-child relationship. Text overlay: 'Link in Bio for your free guide.'"
+          }
+        ],
+        "design_notes": "Mood: Hopeful, respectful, and deeply empathetic. We are a wise guide, not a pushy salesperson. The overall feeling should be calm and reassuring. Color Palette: Warm, muted earth tones. Think soft greens, warm beiges, gentle grays, and a touch of a hopeful, buttery yellow. Avoid harsh primary colors or cold blues. Typography: Use a classic, trustworthy serif font (like Garamond or Lora) for headings to convey wisdom. Use a clean, highly legible sans-serif (like Lato or Open Sans) for the body text to ensure clarity and accessibility. Imagery Style: Absolutely no generic stock photos of lone figures on mountains or abstract graphics. Use authentic, high-quality, 'documentary style' photography. Photos should feel like they were captured from a real family's life—warm, slightly imperfect, and full of genuine emotion. Focus on hands, shared moments, and meaningful environments.",
+        "strategic_rationale": "This final version is a direct response to the focus group's detailed feedback on Concept #2, which was selected for its powerful, actionable core conflict. The narrative was sharpened to follow a more empathetic arc: validate the user's frustration (Slide 1), reframe the parent's motivation from 'denial' to 'pride' (Slide 2), offer a tangible new tactic centered on what the parent values ('keep doing what you love') (Slide 3), and then *show* that tactic in action with a specific, non-abstract visual as requested (Slide 4). We replaced vague visuals like 'support beams' with concrete, emotional scenes like helping in the garden. The CTA (Slide 5) was enhanced to be more specific and build trust, incorporating the idea of a 'guide for proud parents' and adding a 'Trusted by Families' badge to address the user's need for proof and credibility. Finally, a sixth slide was added to provide a powerful emotional payoff for the target audience—the adult child—and create a more complete and satisfying story arc that focuses on their ultimate goal: peace of mind."
+      }
+    }
+  ]
