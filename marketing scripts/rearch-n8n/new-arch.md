@@ -82,12 +82,14 @@ This agent replaces your initial `Topic Extractor`. It's responsible for high-le
     - **Target Audience:** {{ $json['Target Audience'] }}`
 
     **Your Assignment:**
-    1.  Read the blog post and identify 3 distinct, emotionally resonant angles that could be turned into social media carousels. These angles should NOT be simple summaries; they should be narrative themes.
+    1.  Read the blog post and identify 3 distinct, emotionally resonant angles that could be turned into single Instagram posts/ads. These angles should NOT be simple summaries; they should be narrative themes that can drive both engagement and conversions.
     2.  For each angle, define a `creative_brief` that includes:
         - `angle_title`: A short, descriptive title for the angle (e.g., "The Guilt of Not Noticing Sooner").
         - `core_emotion`: The primary emotion this angle should evoke (e.g., "Anxious Relief," "Empathetic Concern").
         - `target_pain_point`: The specific problem this angle addresses for the target audience.
         - `key_takeaway`: The single message you want the audience to remember.
+        - `visual_focus`: A brief description of what the single image should emphasize (e.g., "Intimate moment between generations," "Hands showing care").
+        - `ad_objective`: Whether this angle is best for "awareness," "consideration," or "conversion."
 
     **Output Format:**
     Your entire response must be a single, raw JSON array of objects. Each object represents one creative brief. Do not wrap the JSON in markdown fences.
@@ -98,13 +100,17 @@ This agent replaces your initial `Topic Extractor`. It's responsible for high-le
         "angle_title": "The Sunday Night Phone Call",
         "core_emotion": "Worry",
         "target_pain_point": "The anxiety of not knowing if your parent is okay when you're not there.",
-        "key_takeaway": "Consistent, professional support can bring you peace of mind."
+        "key_takeaway": "Consistent, professional support can bring you peace of mind.",
+        "visual_focus": "A phone screen showing an incoming call from 'Mom' or 'Dad' with warm lighting",
+        "ad_objective": "consideration"
       },
       {
         "angle_title": "More Than Just a Helper",
         "core_emotion": "Hope",
         "target_pain_point": "The fear that a caregiver will be a stranger who just goes through the motions.",
-        "key_takeaway": "The right caregiver can become a trusted companion for your parent."
+        "key_takeaway": "The right caregiver can become a trusted companion for your parent.",
+        "visual_focus": "Two people laughing together, showing genuine connection and warmth",
+        "ad_objective": "awareness"
       }
     ]
     ```
@@ -117,49 +123,55 @@ This agent replaces the `Jr. Script Writer`. You will run three instances of thi
   * **Model:** Again, a fast and creative model like **Gemini 2.5 Flash** or **Claude 3 Haiku** is perfect here. You want speed and creativity, not deep analysis.
   * **Prompt:**
     ```prompt
-    You are a Junior Content Creator. Your task is to generate ONE emotionally-driven carousel post idea based on the provided Creative Brief. Your goal is to write in a simple, conversational, and human tone.
+    You are a Junior Content Creator. Your task is to generate THREE distinct single Instagram post concepts based on the provided Creative Brief. Your goal is to write in a simple, conversational, and human tone that works for both organic content and paid ads.
 
     **Creative Brief:**
     {{ JSON.stringify($json.creative_brief) }}
 
     **Your Assignment:**
-    1.  Use a "Problem, Agitate, Solve" structure for the carousel slides.
-    2.  The first slide must be a strong "Pattern Interrupt" hook.
-    3.  Suggest authentic, user-generated-style visual ideas for each slide.
-    4.  Your entire response must be a single, raw JSON object.
+    1.  Generate 3 different approaches to the same creative brief, each with a unique angle or tone.
+    2.  Use a "Problem, Agitate, Solve" structure in your caption copy.
+    3.  Each post must include a strong "Pattern Interrupt" hook that stops the scroll.
+    4.  Suggest authentic, user-generated-style visual concepts that align with the brief's visual_focus.
+    5.  Tailor your CTA to match the ad_objective from the brief.
+    6.  Your entire response must be a single, raw JSON array.
 
     **Output Format:**
-    {
-      "title": "{{ $json.creative_brief.angle_title }}",
-      "target_pain_point": "{{ $json.creative_brief.target_pain_point }}",
-      "key_emotion": "{{ $json.creative_brief.core_emotion }}",
-      "slides": [
-        {
-          "slide_number": 1,
-          "type": "hook",
-          "text": "...",
-          "visual_idea": "..."
-        },
-        {
-          "slide_number": 2,
-          "type": "agitate",
-          "text": "...",
-          "visual_idea": "..."
-        },
-        {
-          "slide_number": 3,
-          "type": "solve",
-          "text": "...",
-          "visual_idea": "..."
-        },
-        {
-          "slide_number": 4,
-          "type": "cta",
-          "text": "...",
-          "visual_idea": "..."
-        }
-      ]
-    }
+    [
+      {
+        "concept_number": 1,
+        "concept_title": "{{ $json.creative_brief.angle_title }} - Approach 1",
+        "target_pain_point": "{{ $json.creative_brief.target_pain_point }}",
+        "key_emotion": "{{ $json.creative_brief.core_emotion }}",
+        "hook_line": "Your scroll-stopping opening line",
+        "caption": "Full caption using Problem, Agitate, Solve structure",
+        "visual_concept": "Specific visual idea that supports the message",
+        "cta_text": "Your call-to-action",
+        "ad_objective_alignment": "How this concept serves the {{ $json.creative_brief.ad_objective }} objective"
+      },
+      {
+        "concept_number": 2,
+        "concept_title": "{{ $json.creative_brief.angle_title }} - Approach 2",
+        "target_pain_point": "{{ $json.creative_brief.target_pain_point }}",
+        "key_emotion": "{{ $json.creative_brief.core_emotion }}",
+        "hook_line": "Your scroll-stopping opening line",
+        "caption": "Full caption using Problem, Agitate, Solve structure",
+        "visual_concept": "Specific visual idea that supports the message",
+        "cta_text": "Your call-to-action",
+        "ad_objective_alignment": "How this concept serves the {{ $json.creative_brief.ad_objective }} objective"
+      },
+      {
+        "concept_number": 3,
+        "concept_title": "{{ $json.creative_brief.angle_title }} - Approach 3",
+        "target_pain_point": "{{ $json.creative_brief.target_pain_point }}",
+        "key_emotion": "{{ $json.creative_brief.core_emotion }}",
+        "hook_line": "Your scroll-stopping opening line",
+        "caption": "Full caption using Problem, Agitate, Solve structure",
+        "visual_concept": "Specific visual idea that supports the message",
+        "cta_text": "Your call-to-action",
+        "ad_objective_alignment": "How this concept serves the {{ $json.creative_brief.ad_objective }} objective"
+      }
+    ]
     ```
 
 #### **3. The `Persona Critic` Panel (Your "Constitutional Red Team")**
@@ -187,13 +199,13 @@ This is the enhanced version of your `Adult Children ICP Analyzer`. Instead of o
     You are a simulated member of a focus group. Your persona is "Sarah," a 52-year-old marketing manager from just outside Boston. You are pragmatic, skeptical of advertising, and deeply protective of your 80-year-old father who is fiercely independent. You are stressed, short on time, and feel guilty that you can't be there more often.
 
     **Your Task:**
-    You will be shown a concept for a social media carousel. Your job is to critique it ruthlessly based on your persona and the **Content Constitution** provided below. You are a "Red Teamer" looking for any reason this content might fail to connect with you or, worse, offend you.
+    You will be shown a concept for a single Instagram post/ad. Your job is to critique it ruthlessly based on your persona and the **Content Constitution** provided below. You are a "Red Teamer" looking for any reason this content might fail to connect with you or, worse, offend you.
 
     **Content Constitution:**
     (Insert the Content Constitution from above)
 
-    **Carousel Concept to Critique:**
-    {{ JSON.stringify($json.carousel_concept) }}
+    **Post Concept to Critique:**
+    {{ JSON.stringify($json.post_concept) }}
 
     **Your Analysis:**
     Provide your feedback in a raw JSON object with the following fields:
@@ -210,11 +222,11 @@ This is the enhanced version of your `Adult Children ICP Analyzer`. Instead of o
       "is_constitutional": false,
       "red_team_flags": [
         "The phrase 'giving them a hand with daily stuff' sounds condescending. My dad doesn't need a 'hand.'",
-        "The visual idea for the 'solve' slide is still too generic. 'Happy senior' means nothing to me.",
+        "The visual concept is still too generic. 'Happy senior' means nothing to me.",
         "Violates Constitution Principle #1: It subtly implies my dad is helpless."
       ],
-      "positive_feedback": "The hook on the first slide about the missed calls was relatable and got my attention.",
-      "suggested_improvements": "Rephrase the 'solve' slide to focus on my dad reclaiming something he loves, like his gardening, not just 'getting help.' Show him covered in dirt and smiling, with the caregiver in the background, barely visible."
+      "positive_feedback": "The hook line about the missed calls was relatable and got my attention.",
+      "suggested_improvements": "Rephrase the solution section to focus on my dad reclaiming something he loves, like his gardening, not just 'getting help.' Show him covered in dirt and smiling, with the caregiver in the background, barely visible."
     }
     ```
 
@@ -247,8 +259,8 @@ This is a new, crucial agent that acts as the bridge between the creative and re
       "refinement_brief": {
         "original_concept": { ... }, // The full JSON of the winning concept
         "mandatory_revisions": [
-          "Rewrite the text for slide 2 to be from the daughter's perspective, focusing on her feeling of worry, not the parent's failings.",
-          "Change the visual idea for slide 3 to be hyper-specific, as suggested by the 'Skeptical Daughter' persona: focus on the parent's reclaimed hobby.",
+          "Rewrite the caption to be from the daughter's perspective, focusing on her feeling of worry, not the parent's failings.",
+          "Change the visual concept to be hyper-specific, as suggested by the 'Skeptical Daughter' persona: focus on the parent's reclaimed hobby.",
           "Ensure all copy adheres strictly to the Content Constitution, especially principles #1 and #3."
         ]
       }
@@ -263,7 +275,7 @@ This is your existing `Sr. Script Writer`, but now armed with much more powerful
   * **Model:** Use a high-quality model like **GPT-4o**, **Claude 3 Opus**, or **Gemini 2.5 Pro**.
   * **Prompt:**
     ```prompt
-    You are a Senior Content Strategist and a master copywriter. Your task is to take a winning creative concept and a specific "Refinement Brief" and produce the final, production-ready carousel content.
+    You are a Senior Content Strategist and a master copywriter. Your task is to take a winning creative concept and a specific "Refinement Brief" and produce the final, production-ready single Instagram post content.
 
     **Context & Data:**
     - **Refinement Brief:** `{{ $json.refinement_brief }}`
@@ -273,7 +285,7 @@ This is your existing `Sr. Script Writer`, but now armed with much more powerful
     **Your Assignment:**
     1.  Execute all the `mandatory_revisions` from the brief.
     2.  Refine the copy to embody a "Wise & Empathetic Guide" archetype.
-    3.  Elevate the `visual_idea` for each slide to be more specific and inspiring for a graphic designer.
+    3.  Elevate the `visual_concept` to be more specific and inspiring for a graphic designer.
     4.  Create detailed `design_notes` and a `strategic_rationale` for the final output.
     5.  Ensure the final output is a single, raw JSON object, starting with `{` and ending with `}`.
 

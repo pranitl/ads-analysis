@@ -1,0 +1,18 @@
+[
+  {
+    "concept_number": "number",
+    "concept_title": "string",
+    "target_pain_point": "string",
+    "key_emotion": "string",
+    "hook_line": "string",
+    "caption": "string",
+    "visual_concept": "string",
+    "cta_text": "string",
+    "cta_strategy": "string",
+    "ad_objective_alignment": "string",
+    "creative_approach": "string",
+    "why_this_works": "string",
+    "conversion_strategy": "string",
+    "urgency_elements": "string"
+  }
+]
