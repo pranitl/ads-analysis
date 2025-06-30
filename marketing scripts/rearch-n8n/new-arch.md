@@ -48,7 +48,9 @@ graph TD
 
     F --> G(4. Synthesizer Agent);
     G --> H(5. Refiner Agent);
-    H --> I(Final Output: JSON for Image Gen);
+    H --> I(6. Image Prompt Generator Agent);
+    I --> J(7. HTTP Image Generation Node);
+    J --> K(Final Output: Image URL);
 
     style D1 fill:#f9f,stroke:#333,stroke-width:2px
     style D2 fill:#f9f,stroke:#333,stroke-width:2px
@@ -57,6 +59,8 @@ graph TD
     style E2 fill:#ccf,stroke:#333,stroke-width:2px
     style E3 fill:#ccf,stroke:#333,stroke-width:2px
     style G fill:#f90,stroke:#333,stroke-width:2px
+    style I fill:#ff9,stroke:#333,stroke-width:2px
+    style J fill:#9cf,stroke:#333,stroke-width:2px
 ```
 
 This structure would be implemented in n8n by having the `Orchestrator` output an array of tasks, which are then processed by the parallel branches.
@@ -291,5 +295,49 @@ This is your existing `Sr. Script Writer`, but now armed with much more powerful
 
     *(The rest of the output format can remain the same as your original Sr. Script Writer prompt).*
     ```
+
+#### **6. The `Image Prompt Generator` Agent**
+
+This new agent activates *after* the Refiner has produced the final JSON object. Its single responsibility is to transform the `visual_concept`, `design_notes`, and any other relevant creative context into a **production-ready prompt** for an AI image generation model (e.g., **DALL·E 3**, **Stable Diffusion XL**, or **Midjourney**).
+
+* **Role:** A seasoned Art Director who speaks the language of generative-AI image models, able to turn marketing concepts into vivid, reproducible image prompts.
+* **Model:** Choose a model that excels at structured prompt writing and can concisely instruct another AI, such as **GPT-4o**, **Claude 3 Opus**, or **Gemini 2.5 Pro**.
+* **Prompt:**
+    ```prompt
+    You are an Art Director specializing in AI-generated advertising imagery. Take the finalized Instagram ad JSON below and craft a **single, detailed prompt** suitable for the {{ $env.IMAGE_MODEL }} image model. Optimise for a 1:1 aspect ratio and strict platform compliance.
+
+    **Ad JSON:**
+    {{ JSON.stringify($json.final_ad) }}
+
+    **Your Assignment:**
+    1.  Extract the most important visual cues from `visual_concept`, `design_notes`, and `key_emotion`.
+    2.  Translate these cues into rich, descriptive language a generative image model will understand (lighting, composition, colour palette, camera angle, etc.).
+    3.  Include any brand style guide constraints if present.
+    4.  Output a **single line** prompt starting with *"PROMPT:"* and nothing else. Do **not** wrap the text in markdown fences.
+    ```
+
+* **Output:**
+    The agent returns one string field: `image_prompt`.
+
+#### **7. The `HTTP Image Generation` Node**
+
+Once the `Image Prompt Generator` delivers its prompt, an **HTTP Request** node calls your chosen image generation API (OpenAI Images, Stability AI, Midjourney proxy, etc.).
+
+* **Configuration Guidelines:**
+  - **Method:** `POST`
+  - **URL:** Your image-generation endpoint (e.g., `https://api.openai.com/v1/images/generations`).
+  - **Headers:** `Content-Type: application/json`, plus any required `Authorization`.
+  - **Body:**
+    ```json
+    {
+      "model": "{{ $env.IMAGE_MODEL }}",
+      "prompt": "{{ $json.image_prompt }}",
+      "n": 1,
+      "size": "1024x1024"
+    }
+    ```
+  - **Response Mapping:** Capture the returned image URL (e.g., `data[0].url`) for downstream use or storage.
+
+This completes the automated pipeline: from blog-post analysis all the way to a finished Instagram-ready visual asset.
 
 This re-architected workflow is a significant upgrade. It leverages the principles of multi-agent systems to create a more resilient, creative, and quality-focused process, with your "customer persona analyzer" transformed into a powerful, strategic **Constitutional Red Team** at the very heart of the operation.
